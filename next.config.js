@@ -6,8 +6,11 @@ const nextConfig = {
     styledComponents: {
       displayName: true,
       fileName: true,
-    }
-  }
+    },
+  },
+  experimental: {
+    appDir: true, // Required:
+  },
 }
 
 module.exports = nextConfig
