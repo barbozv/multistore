@@ -2,6 +2,7 @@ import { Roboto } from '@next/font/google'
 
 import TopBar from '@/components/topBar'
 import { GlobalStyles } from '@/styles/globals'
+import { Header } from '@/components/header/header'
 
 type RootLayoutProps = {
   children: React.ReactNode
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className={RobotoFont.variable}>
         <GlobalStyles />
         <TopBar />
+        <Header />
         <main>{children}</main>
       </body>
     </html>

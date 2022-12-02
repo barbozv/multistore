@@ -1,9 +1,9 @@
 'use client'
 
-import * as S from './topBar.styles'
-
 import { SocialLink } from '@/components/socialLink'
 import { DropDown } from '@/components/dropDown'
+
+import * as S from './topBar.styles'
 
 export default function TopBar() {
   return (
