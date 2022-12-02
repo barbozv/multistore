@@ -1,5 +1,4 @@
-import TopBar from '@/components/topBar'
-import { Header } from '../header/header'
+import { TopBar, Header } from '@/components'
 
 type LayoutProps = React.PropsWithChildren<{
   label?: string

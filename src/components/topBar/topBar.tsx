@@ -3,7 +3,7 @@ import { DropDown } from '@/components/dropDown'
 
 import * as S from './topBar.styles'
 
-export default function TopBar() {
+export function TopBar() {
   return (
     <S.TopBar>
       <div className="topBar__container">
