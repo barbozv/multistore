@@ -9,6 +9,14 @@ export const TopBar = styled.div`
     display: flex;
     justify-items: center;
     justify-content: space-between;
-    padding: 6px 14px 6px 14px;
+    padding: 6px 14px;
+
+    &__user-area {
+      width: 240px;
+      max-width: 300px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
   }
 `
