@@ -20,7 +20,7 @@ export function DropDown({ label, children }: DropDownProps) {
         onClick={useCallback(() => setIsComponentVisible(!isComponentVisible), [isComponentVisible, setIsComponentVisible])}>
         <span>{label}</span>
         <button>
-          <SlArrowDown className={clsx('close', { open: isComponentVisible })} />
+          <SlArrowDown className={clsx({ open: isComponentVisible, close: !isComponentVisible })} />
         </button>
       </S.DropDownSelector>
       <S.DropDownChildren visible={isComponentVisible}>{children}</S.DropDownChildren>
