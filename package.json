@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@next/font": "^13.0.5",
@@ -25,6 +26,8 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.26",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.4",
     "prettier": "2.8.0"
   },
   "resolutions": {
