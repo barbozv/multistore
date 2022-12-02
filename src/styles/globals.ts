@@ -1,5 +1,3 @@
-'use client'
-
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
@@ -22,7 +20,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   
   body {
-   font-family: var(--default-font), sans-serif;
+   /* font-family: var(--default-font), sans-serif; */
   }
 
 @media (prefers-color-scheme: light) {

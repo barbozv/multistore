@@ -1,5 +1,3 @@
-'use client'
-
 import { SocialLink } from '@/components/socialLink'
 import { DropDown } from '@/components/dropDown'
 
