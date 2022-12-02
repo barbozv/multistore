@@ -1,26 +1,37 @@
+'use client'
+
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
+  
+  :root {
+     --color-hiContrast: #000;
+     --color-loContrast: #fff;
+     --color-primary: #fc7703;
+     --color-border: #ddd;
+  }
 
-  html,
-  body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    font-size: 62.5%;
+  }
+  
+  body {
+   font-family: var(--default-font), sans-serif;
+  }
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
   }
   body {
-    color: white;
-    background: black;
+    color: var(--color-hiContrast);
+    background: var(--color-loContrast);
   }
+ }
 `

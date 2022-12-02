@@ -1,0 +1,15 @@
+{
+  "Jest Describe Block": {
+    "prefix": "describe",
+    "body": ["describe('$1', () => {", "\ttest('should $2', () => {", "\t\texpect(1).toBe(1)", "\t})", "})"],
+    "description": "criar o bloco para o describe"
+  },
+  "Import testUtil": {
+    "prefix": "import",
+    "body": ["import { render, screen } from '@/shared/helpers/testUtils'"]
+  },
+  "gerar bloco function": {
+    "prefix": "ger",
+    "body": ["import * as S from './$1'\n", "export function ${Name}(){", "\t return <S.Container>Name</S.Container>", "}"]
+  }
+}
