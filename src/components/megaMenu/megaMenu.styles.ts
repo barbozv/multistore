@@ -1,14 +1,16 @@
 import styled from 'styled-components'
 
-export const SocialLink = styled.nav`
-  width: 175px;
-
+export const MegaMenu = styled.nav`
   ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    padding: 0px 15px;
+    background-color: green;
 
     li {
+      font-size: 18px;
+      margin-right: 10px;
       list-style: none;
 
       svg {
@@ -16,10 +18,6 @@ export const SocialLink = styled.nav`
         height: 18px;
         fill: #000;
         transition: all 0.2s ease;
-
-        :hover {
-          fill: var(--color-primary);
-        }
       }
     }
   }

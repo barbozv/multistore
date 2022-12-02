@@ -8,9 +8,6 @@ const nextConfig = {
       fileName: true,
     },
   },
-  experimental: {
-    appDir: true, // Required:
-  },
 }
 
 module.exports = nextConfig
