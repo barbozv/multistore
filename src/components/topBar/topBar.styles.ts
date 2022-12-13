@@ -9,7 +9,7 @@ export const TopBar = styled.div`
     display: flex;
     justify-items: center;
     justify-content: space-between;
-    padding: 6px 14px;
+    padding: 6px 0 6px;
 
     &__user-area {
       width: 240px;

@@ -4,9 +4,9 @@ export const DropDown = styled.div`
   position: relative;
 `
 export const DropDownSelector = styled.div`
-  width: 80px;
   display: flex;
   justify-content: space-around;
+  align-items: baseline;
   cursor: pointer;
 
   button {
@@ -24,6 +24,7 @@ export const DropDownSelector = styled.div`
   span {
     font-size: 14px;
     font-weight: 200;
+    margin-right: 10px;
   }
 
   .open {
@@ -39,7 +40,7 @@ export const DropDownChildren = styled.div<{ visible?: boolean }>`
   position: absolute;
   top: 26px;
   left: -20px;
-  width: 120px;
+  min-width: 120px;
   height: 150px;
   background-color: #fff;
   border-radius: 5px;

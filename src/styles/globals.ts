@@ -34,6 +34,10 @@ export const GlobalStyles = createGlobalStyle`
   }
  }
 
+ li {
+  list-style: none;
+ }
+
  .d-image-full {
     width: 100%;
   }
