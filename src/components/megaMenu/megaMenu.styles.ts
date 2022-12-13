@@ -1,24 +1,37 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const MegaMenu = styled.nav`
-  ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 15px;
-    background-color: green;
+  ${({ theme }) => css`
+    flex: 1;
+    display: none;
 
-    li {
-      font-size: 18px;
-      margin-right: 10px;
-      list-style: none;
+    @media (min-width: ${theme.breakpoints.xl}) {
+      display: block;
+    }
 
-      svg {
-        width: 18px;
-        height: 18px;
-        fill: #000;
-        transition: all 0.2s ease;
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0 0 0 30px;
+      li {
+        font-size: 18px;
+        margin-right: 10px;
+        list-style: none;
+        margin-right: 40px;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+
+        svg {
+          width: 18px;
+          height: 18px;
+          fill: #000;
+          transition: all 0.2s ease;
+        }
       }
     }
-  }
+  `}
 `

@@ -1,14 +1,18 @@
 import * as S from './header.styles'
 
-import { MegaMenu } from '@/components/megaMenu'
-import { DropDown } from '@/components/dropDown'
+import { Burger, Container, Logo, MegaMenu, UserAccount } from '@/components'
 
 export function Header() {
-    return (
-        <S.Header>
-            <nav className=" header__container">
-                <MegaMenu />
-            </nav>
-        </ S.Header>
-    )
+  return (
+    <S.Header>
+      <Container fluid>
+        <nav className=" header__container">
+          <Burger />
+          <MegaMenu />
+          <Logo />
+          <UserAccount />
+        </nav>
+      </Container>
+    </S.Header>
+  )
 }

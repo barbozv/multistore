@@ -2,22 +2,22 @@
 export const megaMenu = [
   {
     name: 'Home',
-    url: '#',
+    url: '/',
   },
   {
     name: 'Utensils',
-    url: '#',
+    url: '/utensils',
   },
   {
     name: 'Decoration',
-    url: '#',
+    url: '/decoration',
   },
   {
     name: 'Petz',
-    url: '#',
+    url: '/petz',
   },
   {
     name: 'Products',
-    url: '#',
+    url: '/products',
   },
 ]

@@ -45,4 +45,5 @@ export const DropDownChildren = styled.div<{ visible?: boolean }>`
   border-radius: 5px;
   box-shadow: 0 0 4px rgb(0 0 0 / 15%);
   padding: 10px;
+  z-index: 2;
 `

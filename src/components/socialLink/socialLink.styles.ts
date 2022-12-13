@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const SocialLink = styled.nav`
   width: 175px;
 
+  @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+    width: 150px;
+  }
+
   ul {
     display: flex;
     justify-content: space-between;
